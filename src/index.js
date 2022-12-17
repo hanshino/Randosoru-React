@@ -15,9 +15,9 @@ Sentry.init({
 ReactDOM.render(
   <React.StrictMode>
     <Sentry.ErrorBoundary showDialog>
-    <Suspense fallback={<Fragment />}>
-      <App />
-    </Suspense>
+      <Suspense fallback={<Fragment />}>
+        <App />
+      </Suspense>
     </Sentry.ErrorBoundary>
   </React.StrictMode>,
   document.getElementById("root")
